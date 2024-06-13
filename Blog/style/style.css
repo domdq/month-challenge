@@ -60,13 +60,13 @@ header{
 /******************* Seção Cards *****************/
 li{
   background-color: var(--dark-20);
-  padding: 40px;
-  border: 2px;
-  border-radius: 8px;
+  padding: 2.5rem;
+  border: 0.125rem;
+  border-radius: 0.5rem;
 }
 
 ion-icon{
-font-size: 20px;
+font-size: 1.25rem;
 }
 
 .data_logo{
@@ -74,24 +74,24 @@ font-size: 20px;
   justify-content: space-between;
   align-items: center;
   color: var(--brand-color);
-  font-family: 'Inter';
-  font-size: 16px;
+  font-family: 'Inter', 'sans-serif';
+  font-size: 1rem;
   font-weight: 500;
 }
 
 #titlle-card{
   color: var(--dark-60);
-  font-size: 24px;
+  font-size: 1.5rem;
   font-weight: 500;
-  font-family: 'Space Grotesk';
-  margin-top: 20px;
+  font-family: 'Space Grotesk', 'sans-serif';
+  margin-top: 1.25rem;
 }
 
 #text-card{
   color: var(--dark-50);
-  font-family: 'Inter';
-  font-size: 20px;
+  font-family: 'Inter', 'sans-serif';
+  font-size: 1.25rem;
   font-weight: 500;
-  margin-top: 16px;
+  margin-top: 1rem;
 }
 
