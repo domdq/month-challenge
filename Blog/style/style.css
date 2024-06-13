@@ -14,13 +14,14 @@
   --dark-40: #252529;
   --dark-50: #AFABB6;
   --dark-60: #FFFFFF;
+  --brand-color: #E07B67;
 }
 
 body{
   background: var(--dark-10);
 }
 
-/*************** Header ****************/
+/*********************** Header *********************/
 header{
   background: var(--dark-20);
 }
@@ -55,3 +56,42 @@ header{
   color: var(--dark-50);
   font-family: 'Inter';
 }
+
+/******************* Seção Cards *****************/
+li{
+  background-color: var(--dark-20);
+  padding: 2.5rem;
+  border: 0.125rem;
+  border-radius: 0.5rem;
+}
+
+ion-icon{
+font-size: 1.25rem;
+}
+
+.data_logo{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--brand-color);
+  font-family: 'Inter', 'sans-serif';
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+#titlle-card{
+  color: var(--dark-60);
+  font-size: 1.5rem;
+  font-weight: 500;
+  font-family: 'Space Grotesk', 'sans-serif';
+  margin-top: 1.25rem;
+}
+
+#text-card{
+  color: var(--dark-50);
+  font-family: 'Inter', 'sans-serif';
+  font-size: 1.25rem;
+  font-weight: 500;
+  margin-top: 1rem;
+}
+
