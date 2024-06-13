@@ -67,7 +67,8 @@ li{
 }
 
 ion-icon{
-font-size: 1.25rem;
+font-size: 1.875rem;
+  cursor: pointer;
 }
 
 .data_logo{
@@ -96,3 +97,6 @@ font-size: 1.25rem;
   margin-top: 1rem;
 }
 
+.is-liked{
+  border: 0.125rem solid var(--brand-color);
+}
