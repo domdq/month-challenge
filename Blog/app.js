@@ -31,6 +31,7 @@ function renderTemplate() {
   posts.forEach(function (post) {
     ul.innerHTML += template(post);
   });
+
   const buttonLike = document.querySelectorAll(".btn-like");
   buttonLike.forEach(function (button) {
     button.addEventListener("click", function (event) {
@@ -61,5 +62,3 @@ function template(post) {
                 <p id="text-card">${post.bodyText}</p>
           </li>`;
 }
-
-console.log(buttonLike);
