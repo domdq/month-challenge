@@ -1,12 +1,12 @@
 const ul = document.querySelector(".cards");
-const posts = [
+let posts = [
   {
     id: 1,
     date: "17 de Ago, 2024",
-    title: "O que é linguagem de programação? Conheça as principais",
+    title: "O que é linguagem de programação?  as principais",
     bodyText:
       "Uma das mais populares vertentes da tecnologia da informação, a área de programação segue tendo muita demanda de trabalho justamente pela velocidade com que dispositivos tecnológicos vêm avançando.",
-    isLiked: true,
+    isLiked: false,
   },
   {
     id: 2,
@@ -27,6 +27,7 @@ const posts = [
 ];
 
 function renderTemplate() {
+  loadPosts();
   ul.innerHTML = "";
   posts.forEach(function (post) {
     ul.innerHTML += template(post);
@@ -36,19 +37,16 @@ function renderTemplate() {
   buttonLike.forEach(function (button) {
     button.addEventListener("click", function (event) {
       const id = +event.target.dataset.id;
-      const post = posts.find(function (post) {
-        return post.id === id;
-      });
       const indexPost = posts.findIndex(function (post) {
         return post.id === id;
       });
-      posts[indexPost].isLiked = !post.isLiked;
+      posts[indexPost].isLiked = !posts[indexPost].isLiked;
       console.log(posts[indexPost]);
+      savePosts();
       renderTemplate();
     });
   });
 }
-renderTemplate();
 
 function template(post) {
   return ` <li class="${post.isLiked ? "is-liked" : ""}">
@@ -62,3 +60,19 @@ function template(post) {
                 <p id="text-card">${post.bodyText}</p>
           </li>`;
 }
+
+function loadPosts() {
+  const savedPosts = localStorage.getItem("blog_posts");
+  if (savedPosts === null) {
+    savePosts();
+  } else {
+    posts = JSON.parse(savedPosts);
+    console.log(posts);
+  }
+}
+
+function savePosts() {
+  localStorage.setItem("blog_posts", JSON.stringify(posts));
+}
+
+renderTemplate();
