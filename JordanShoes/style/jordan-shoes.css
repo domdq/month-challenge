@@ -3,6 +3,7 @@
   margin: 0;
   box-sizing: border-box;
   font-family: 'Archivo';
+  list-style: none;
 }
 
 :root{
@@ -82,5 +83,47 @@ font-family: 'Archivo';
   font-size: 1.5rem;
   line-height: 2.125rem;
   text-align: center;
+  margin-top: 1.5rem;
+}
+
+/* ******************* Seção tenis ******************** */
+
+.tenis-container{
+  max-width: 76rem;
+  margin: 0 auto;
+  margin-top: 4.5rem;
+}
+
+.seçãoTenis-1{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.infor-tenis{
+  font-family: 'Archivo';
+  font-size: 1.125rem;
+  font-weight: 500;
+  line-height: 1.5rem;
+  color: var(--dark-10);
+  margin-top: 1.5rem;
+}
+
+.nome-tenis{
+  font-family: 'Archivo';
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.0625rem;
+  color: var(--brand-color);
+  margin-top: 0.75rem;
+}
+
+.preço-tenis{
+  font-family: 'Archivo';
+  font-size: 1.25rem;
+  font-weight: 500;
+  line-height: 1.5625rem;
+  color: var(--dark-10);
   margin-top: 1.5rem;
 }
