@@ -94,12 +94,24 @@ font-family: 'Archivo';
   margin-top: 4.5rem;
 }
 
-.seçãoTenis-1{
+.cardTenis{
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+    justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
 }
 
+.cardTenis li{
+ width: 24rem;
+}
+
+.card-tenis-img-container{
+  display: flex;
+  align-items:  center;
+  justify-content: center;
+  background: var(--dark-20);
+  padding: 2rem;
+}
 
 .infor-tenis{
   font-family: 'Archivo';
@@ -128,11 +140,22 @@ font-family: 'Archivo';
   margin-top: 1.5rem;
 }
 
-/* seção tenis 2 */
+/* Responsivel */
 
-.seçãoTenis-2{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-top: 4.5rem;
+@media (max-width: 1230px){
+  .container-header{
+    max-width: 90%;
+  }
+}
+
+@media (max-width: 768px){
+  .container-header{
+    max-width: 90%;
+  }
+}
+
+@media (max-width: 375px){
+  .container-header{
+    max-width: 90%;
+  }
 }
