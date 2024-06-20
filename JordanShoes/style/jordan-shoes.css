@@ -96,7 +96,7 @@ font-family: 'Archivo';
 
 .seçãoTenis-1{
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
 }
 
@@ -127,3 +127,13 @@ font-family: 'Archivo';
   color: var(--dark-10);
   margin-top: 1.5rem;
 }
+
+/* seção tenis 2 */
+
+.seçãoTenis-2{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 4.5rem;
+}
+
