@@ -110,7 +110,16 @@ font-family: 'Archivo';
   align-items:  center;
   justify-content: center;
   background: var(--dark-20);
-  padding: 2rem;
+  border: solid none;
+  border-radius: 5px;
+}
+
+.card-tenis-img-container img {
+   transition: transform 0.3s ease;
+}
+
+.card-tenis-img-container img:hover {
+   transform: scale(1.2);
 }
 
 .infor-tenis{
