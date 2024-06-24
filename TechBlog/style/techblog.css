@@ -1,0 +1,22 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  font-family: 'Roboto', "sans-serif";
+}
+
+:root{
+  --brandColor: #846AFF;
+  --dark10: #121214;
+  --dark20: #7C7C8A;
+  --dark30: #EAEAEA;
+  --dark40: #EEEEFF;
+  --dark50: #F8F8FF;
+  --dark60: #FFFFFF;
+}
+
+.container{
+  max-width: 120rem;
+  margin: 0 auto;
+}
