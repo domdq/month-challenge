@@ -16,7 +16,164 @@
   --dark60: #FFFFFF;
 }
 
-.container{
+/* ******** Header ********** */
+
+header{
   max-width: 120rem;
   margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14.6875rem;
+  background: var(--dark50);
+}
+
+.headerIfor{
+  margin-top: 3.125rem;
+}
+
+#headerTitlle {
+  font-family: 'Roboto';
+  font-size: 2.5rem;
+  font-weight: 600;
+  line-height: 3rem;
+  color: var(--dark10);
+}
+
+#spanTitlle{
+  font-family: 'Roboto';
+  font-size: 2.5rem;
+  font-weight: 600;
+  line-height: 3rem;
+  color: var(--brandColor);
+}
+
+#headerText{
+  font-family: 'Roboto';
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 2.25rem;
+  color: var(--dark10);
+  margin-top: 2rem;
+}
+
+#headerBtn{
+  background: var(--brandColor);
+  border: none;
+  border-radius: 0.25rem;
+  padding: 0.875rem 2rem;
+  margin-top: 2rem;
+}
+#headerBtn{
+  font-family: 'Roboto';
+  font-weight: 700;
+  font-size: 1.125rem;
+  line-height: 1.3125rem;
+  text-align: center;
+  color: var(--dark60);
+}
+
+/* ********** Article *********** */
+.articleContainer{
+  max-width: 120rem;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  margin-top: 5rem;
+}
+
+#articleTitlle{
+  margin-left: 9.6875rem;
+  font-family: 'Roboto';
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 2.3125rem;
+}
+
+.articleCards{
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  margin-top: 113px;
+}
+
+.articleH3{
+  margin-top: 2rem;
+  font-family: 'Roboto';
+  font-size: 1.25rem;
+  line-height: 1.625rem;
+  font-weight: 600;
+  color: var(--dark10);
+}
+
+.articleText{
+  margin-top: 0.75rem;
+  font-family: 'Roboto';
+  font-size: 1.125rem;
+  line-height: 1.6875rem;
+  font-weight: 400;
+  color: var(--dark10);
+}
+
+/* ****** Form ****** */
+form{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background: var(--dark50);
+  margin-top: 5rem;
+}
+
+#formTitlle{
+  font-family: 'Roboto';
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 2.3125rem;
+  color: var(--dark10);
+  margin-top: 7rem;
+  margin-bottom: 3rem;
+}
+
+.inputForm{
+  font-family: 'Roboto';
+  font-size: 1.125rem;
+  font-weight: 400;
+  line-height: 21px;
+  color: var(--dark20);
+}
+
+.inputForm{
+  border: 0.0625rem;
+  border-radius: 0.25rem;
+  padding: 1.1875rem 1.5rem;
+  background: var(--dark60);
+  width: 50%;
+  margin-top: 1.5rem;
+}
+
+.inputForm{
+  outline: none;
+  outline: var(--dark60);
+}
+
+.btnForm{
+  background: var(--brandColor);
+  border: none;
+  border-radius: 0.25rem;
+  padding: 0.875rem 2rem;
+  width: 50%;
+  margin-bottom: 5rem;
+  margin-top: 2.5rem;
+}
+
+.btnForm{
+   font-family: 'Roboto';
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 1.125rem;
+  text-align: center;
+  color: var(--dark60);
 }
