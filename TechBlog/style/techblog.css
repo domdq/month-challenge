@@ -63,6 +63,8 @@ header{
   border-radius: 0.25rem;
   padding: 0.875rem 2rem;
   margin-top: 2rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 #headerBtn{
   font-family: 'Roboto';
@@ -71,6 +73,10 @@ header{
   line-height: 1.3125rem;
   text-align: center;
   color: var(--dark60);
+}
+
+#headerBtn:hover{
+background-color: #845AFF;
 }
 
 /* ********** Article *********** */
@@ -97,6 +103,14 @@ header{
   align-items: center;
   gap: 2rem;
   margin-top: 113px;
+}
+
+.img{
+  transition: transform 0.3s ease;
+}
+
+.img:hover{
+  transform: scale(1.2);
 }
 
 .articleH3{
@@ -167,6 +181,8 @@ form{
   width: 50%;
   margin-bottom: 5rem;
   margin-top: 2.5rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
 .btnForm{
@@ -176,4 +192,8 @@ form{
   line-height: 1.125rem;
   text-align: center;
   color: var(--dark60);
+}
+
+.btnForm:hover{
+  background-color: #845AFF ;
 }
