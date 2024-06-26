@@ -13,121 +13,127 @@
     />
   </head>
   <body>
-    <div class="container">
-      <!-------------- Header ------------>
-      <header>
-        <div class="headerIfor">
-          <h1>
-            Encontre os <span id="spanTitlle">melhores artigos</span> <br />
-            de programação em um só lugar
-          </h1>
-          <p id="HeaderText">
-            Explore o topo da programação em um só lugar! <br />
-            Seu destino único para dicas e tendências atuais.
-          </p>
-          <button id="HeaderBtn">Buscar artigos</button>
-        </div>
+    <!-------------- Header ------------>
+    <header>
+      <div class="headerIfor">
+        <h1 id="headerTitlle">
+          Encontre os <span id="spanTitlle">melhores artigos</span> <br />
+          de programação em um só lugar
+        </h1>
+        <p id="headerText">
+          Explore o topo da programação em um só lugar! <br />
+          Seu destino único para dicas e tendências atuais.
+        </p>
+        <button id="headerBtn">Buscar artigos</button>
+      </div>
+      <div class="headerIfor">
         <img src="./img/logo.svg" alt="" />
-      </header>
-      <!----------- Articles -------------->
-      <article>
-        <h2 id="articleTitlle">Artigos recomendados</h2>
-        <ul class="articleCards">
-          <li>
-            <div class="articleImg">
-              <img src="./img/image1.png" alt="" />
-            </div>
-            <h3 class="articleH3">
-              O que é linguagem de programação? Conheça as principais
-            </h3>
-            <p class="articleText">
-              Uma das mais populares vertentes da tecnologia da <br />
-              informação, a área de...
-            </p>
-          </li>
-          <li>
-            <div class="articleImg">
-              <img src="./img/python.png" alt="" />
-            </div>
-            <h3 class="articleH3">
-              Python: por que a linguagem é tão <br />
-              usada para Data Science e finanças?
-            </h3>
-            <p class="articleText">
-              O mundo da programação conta com <br />
-              algumas opções de linguagem para...
-            </p>
-          </li>
-          <li>
-            <div class="articleImg">
-              <img src="./img/GitHub.png" alt="" />
-            </div>
-            <h3 class="articleH3">
-              GitHub tem receita de US$ 1 bilhão e <br />
-              90 milhões de usuários
-            </h3>
-            <p class="articleText">
-              O popular serviço de repositório de <br />
-              código GitHub foi adquirido pela...
-            </p>
-          </li>
-          <li>
-            <div class="articleImg">
-              <img src="./img/Git.png" alt="" />
-            </div>
-            <h3 class="articleH3">
-              15 comandos no GIT que os <br />
-              desenvolvedores precisam saber
-            </h3>
-            <p class="articleText">
-              Dominar os comandos GIT é uma <br />
-              habilidade que se conquista com...
-            </p>
-          </li>
-          <li>
-            <div class="articleImg">
-              <img src="./img/Git-Gitub.png" alt="" />
-            </div>
-            <h3 class="articleH3">
-              GIT e GitHub: o que são e quais as <br />
-              diferenças entre eles?
-            </h3>
-            <p class="articleText">
-              Git e GibHub são dois softwares de <br />
-              controle de versão essenciais para...
-            </p>
-          </li>
-          <li>
-            <div class="articleImg">
-              <img src="./img/GitHubCopilot.png" alt="" />
-            </div>
-            <h3 class="articleH3">
-              GitHub Copilot ganha integração com <br />
-              GPT-4 e interface conversacional
-            </h3>
-            <p class="articleText">
-              O GitHub Copilot, ferramenta de <br />
-              desenvolvimento baseada em IA...
-            </p>
-          </li>
-        </ul>
-      </article>
-      <!------------- Form --------------->
-      <form>
-        <h1 id="formTitlle">Entre em contato</h1>
-        <!-- Campo Nome -->
-        <label for="name">Nome</label>
-        <input type="text" id="inputName" name="nome" />
-        <!-- Campo E-mail -->
-        <label for="email">E-mail</label>
-        <input type="email" id="inputEmail" name="email" />
-        <!-- Campo Mensagem -->
-        <label for="mensagem">Mensagem</label>
-        <textarea name="mensagem" id="mensagem" rows="4" cols="50"></textarea>
-        <!-- Campo Botão -->
-        <button id="formBtn">entrar em contato</button>
-      </form>
-    </div>
+      </div>
+    </header>
+    <!----------- Articles -------------->
+    <article class="articleContainer">
+      <div id="articleTitlle">
+        <h2>Artigos recomendados</h2>
+      </div>
+      <ul class="articleCards">
+        <li>
+          <div class="articleImg">
+            <img src="./img/image1.png" alt="" />
+          </div>
+          <h3 class="articleH3">
+            O que é linguagem de programação? <br />
+            Conheça as principais
+          </h3>
+          <p class="articleText">
+            Uma das mais populares vertentes da tecnologia <br />
+            da informação, a área de...
+          </p>
+        </li>
+        <li>
+          <div class="articleImg">
+            <img src="./img/python.png" alt="" />
+          </div>
+          <h3 class="articleH3">
+            Python: por que a linguagem é tão <br />
+            usada para Data Science e finanças?
+          </h3>
+          <p class="articleText">
+            O mundo da programação conta com <br />
+            algumas opções de linguagem para...
+          </p>
+        </li>
+        <li>
+          <div class="articleImg">
+            <img src="./img/GitHub.png" alt="" />
+          </div>
+          <h3 class="articleH3">
+            GitHub tem receita de US$ 1 bilhão e <br />
+            90 milhões de usuários
+          </h3>
+          <p class="articleText">
+            O popular serviço de repositório de <br />
+            código GitHub foi adquirido pela...
+          </p>
+        </li>
+        <li>
+          <div class="articleImg">
+            <img src="./img/Git.png" alt="" />
+          </div>
+          <h3 class="articleH3">
+            15 comandos no GIT que os <br />
+            desenvolvedores precisam saber
+          </h3>
+          <p class="articleText">
+            Dominar os comandos GIT é uma <br />
+            habilidade que se conquista com...
+          </p>
+        </li>
+        <li>
+          <div class="articleImg">
+            <img src="./img/Git-Gitub.png" alt="" />
+          </div>
+          <h3 class="articleH3">
+            GIT e GitHub: o que são e quais as <br />
+            diferenças entre eles?
+          </h3>
+          <p class="articleText">
+            Git e GibHub são dois softwares de <br />
+            controle de versão essenciais para...
+          </p>
+        </li>
+        <li>
+          <div class="articleImg">
+            <img src="./img/GitHubCopilot.png" alt="" />
+          </div>
+          <h3 class="articleH3">
+            GitHub Copilot ganha integração com <br />
+            GPT-4 e interface conversacional
+          </h3>
+          <p class="articleText">
+            O GitHub Copilot, ferramenta de <br />
+            desenvolvimento baseada em IA...
+          </p>
+        </li>
+      </ul>
+    </article>
+    <!------------- Form --------------->
+    <form>
+      <h1 id="formTitlle">Entre em contato</h1>
+      <!-- Campo Nome -->
+      <input type="text" class="inputForm" name="nome" placeholder="Nome" />
+      <!-- Campo E-mail -->
+      <input type="email" class="inputForm" name="email" placeholder="Email" />
+      <!-- Campo Mensagem -->
+      <textarea
+        name="mensagem"
+        class="inputForm"
+        rows="4"
+        cols="50"
+        placeholder="Assunto da mensagem"
+      ></textarea>
+      <!-- Campo Botão -->
+      <button class="btnForm">entrar em contato</button>
+    </form>
     <script src="./techblog.js"></script>
   </body>
 </html>

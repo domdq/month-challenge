@@ -49,7 +49,7 @@ header{
 
 .search-input:focus{
    outline: none;
-  outline: 1px solid var(--dark-40);
+  outline: 0.125rem solid var(--dark-40);
 }
 
 .search-input::placeholder{
