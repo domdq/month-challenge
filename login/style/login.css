@@ -13,3 +13,11 @@
   --dark40: #F7FAFC;
   --dark50: #FFFFFF;
 }
+
+/*********************** Main ******************** */
+.main{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 280px;
+}
