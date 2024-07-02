@@ -113,6 +113,11 @@ a{
   color: var(--brand-color);
 }
 
+#spanCheck:hover{
+  text-decoration: underline;
+  color: var(--hover-color);
+}
+
 /* *** BTN Form*** */
 
 #greenBTN{
@@ -168,5 +173,8 @@ a{
 
  #spanFooter{
   color: var(--brand-color);
-   
+ }
+ #spanFooter:hover{
+  text-decoration: underline;
+  color: var(--hover-color);
  }
