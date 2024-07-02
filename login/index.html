@@ -21,26 +21,28 @@
         <form class="form">
           <p id="textForm">Bem-vindo de volta</p>
           <h1 id="titlleForm">Faça login na sua conta</h1>
-          <label class="labelForm">E-mail</label>
+          <label for="email" class="labelForm">E-mail</label>
           <input
+            id="email"
             type="email"
             name="email"
             placeholder="exemplo@gmail.com"
             class="inputForm"
           />
-          <label class="labelForm">Senha</label>
+          <label for="password" class="labelForm">Senha</label>
           <input
+            id="password"
             type="password"
             name="password"
             placeholder="0123456789"
             class="inputForm"
           />
           <div id="checkInfor">
-            <input type="checkbox" name="checkbox" id="inpuntCheck" />
-            <p id="textCheck">Lembre de mim</p>
             <div>
-              <a href="#" id="spanCheck">Esqueceu sua senha?</a>
+              <input type="checkbox" name="checkbox" id="inpuntCheck" />
+              <label for="inpuntCheck" id="textCheck">Lembre de mim</label>
             </div>
+            <a href="#" id="spanCheck">Esqueceu sua senha?</a>
           </div>
           <button id="greenBTN">Entrar na Conta</button>
           <button id="blackBTN">

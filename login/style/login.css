@@ -11,6 +11,8 @@ a{
 
 :root{
   --brand-color: #1E9E6A;
+  --hover-color: #13885b;
+  --google-color: #2d384d;
   --dark10: #1A202C;
   --dark20: #656769;
   --dark30: #E8E8E8;
@@ -21,7 +23,7 @@ a{
 /*********************** Main ******************** */
 .main{
   display: flex;
-  height: 100%;
+  min-height: 100vh;
   }
 
   #logo{
@@ -29,7 +31,7 @@ a{
     align-items: center;
     justify-content: center;
     width: 50%;
-    margin-top: 100px;
+    background: var(--dark30);
   }
 
   #form{
@@ -37,7 +39,6 @@ a{
     align-items: center;
     justify-content: center;
     width: 50%;
-    margin-top: 100px;
   }
 
   /*********** Form ******* */
@@ -73,7 +74,7 @@ a{
   .inputForm{
     padding: 1rem;
     border: 0.0625rem var(--dark30);
-    border-radius: 4px;
+    border-radius: 0.25rem;
     background: var(--dark40);
     margin-top: 0.75rem;
   }
@@ -118,7 +119,7 @@ a{
   background: var(--brand-color);
   padding: 1rem 2rem;
   margin-top: 3.4375rem;
-  border-radius: 4px;
+  border-radius: 0.25rem;
   border: none;
   color: var(--dark50);
   font-family: 'Archivo';
@@ -128,13 +129,17 @@ a{
   cursor: pointer;
 }
 
+#greenBTN:hover{
+  background: var(--hover-color);
+}
+
 #blackBTN{
   display: flex;
   gap: 0.625rem;
    background: var(--dark10);
   padding: 1rem 2rem;
   margin-top: 1.5rem;
-  border-radius: 4px;
+  border-radius: 0.25rem;
   border: none;
   color: var(--dark50);
   font-family: 'Archivo';
@@ -142,6 +147,10 @@ a{
   font-size: 1.125rem;
   align-items: center;
   cursor: pointer;
+}
+
+#blackBTN:hover{
+  background: var(--google-color);
 }
 
 /* ******* Footer ******** */
