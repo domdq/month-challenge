@@ -13,3 +13,23 @@
   --dark40: #F7FAFC;
   --dark50: #FFFFFF;
 }
+
+/*********************** Main ******************** */
+.main{
+  display: flex;
+  height: 100%;
+  }
+
+  #logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+  }
+
+  #form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+  }
