@@ -178,3 +178,31 @@ a{
   text-decoration: underline;
   color: var(--hover-color);
  }
+
+@media (max-width: 1230px){
+  .main{
+    max-width: 90%;
+  }
+}
+
+@media (max-width: 770px){
+  .main{
+    max-width: 90%;
+    align-items: center;
+    justify-content: center;
+  }
+  #logo,img{
+    display: none;
+  }
+}
+
+@media (max-width: 480px){
+  .main{
+    max-width: 90%;
+    justify-content: center;
+    align-items: center;
+  }
+  #loho,img{
+    display: none;
+  }
+}
