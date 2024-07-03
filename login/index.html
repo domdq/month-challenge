@@ -18,29 +18,43 @@
         <img src="./img/svg.svg" alt="" />
       </div>
       <div id="form">
-      <form class="form">
-        <p id="textForm">Bem-vindo de volta</p>
-        <h1 id="titlleForm">Façã login na sua conta</h1>
-        <label class="labelForm">E-mail</label>
-        <input type="email" name="email" placeholder="exemplo@gmail.com" class="inputForm"/>
-        <label class="labelForm">Senha</label>
-        <input type="password" name="password" placeholder="0123456789" class="inputForm" />
-        <div id="check">
-          <div>
-            <input type="checkbox" name="checkbox" id="inpuntCheck"/>
-            <p id="textCheck">Lembre de mim</p>
+        <form class="form">
+          <p id="textForm">Bem-vindo de volta</p>
+          <h1 id="titlleForm">Faça login na sua conta</h1>
+          <label for="email" class="labelForm">E-mail</label>
+          <input
+            id="email"
+            type="email"
+            name="email"
+            placeholder="exemplo@gmail.com"
+            class="inputForm"
+          />
+          <label for="password" class="labelForm">Senha</label>
+          <input
+            id="password"
+            type="password"
+            name="password"
+            placeholder="0123456789"
+            class="inputForm"
+          />
+          <div id="checkInfor">
+            <div>
+              <input type="checkbox" name="checkbox" id="inpuntCheck" />
+              <label for="inpuntCheck" id="textCheck">Lembre de mim</label>
+            </div>
+            <a href="#" id="spanCheck">Esqueceu sua senha?</a>
           </div>
-          <span id="spanCheck">Esqueceu sua senha?</span>
-        </div>
-        <button id="greenBTN">Entrar na Conta/button>
+          <button id="greenBTN">Entrar na Conta</button>
           <button id="blackBTN">
-            <img src="./img/icon.svg" alt="">
+            <img src="./img/icon.svg" alt="" />
             <p>Ou faça login com o Google</p>
           </button>
           <footer class="footer">
-          <p id="textFooter">Não tem uma conta? <span id="spanFooter">Cadastre-se</span></p>
+            <p id="textFooter">
+              Não tem uma conta? <a href="#" id="spanFooter">Cadastre-se</a>
+            </p>
           </footer>
-      </form>
+        </form>
       </div>
     </main>
     <script src="./login.js"></script>

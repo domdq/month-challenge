@@ -5,8 +5,14 @@
   font-family: 'Archivo' sans-serif;
 }
 
+a{
+ text-decoration:  none;
+}
+
 :root{
   --brand-color: #1E9E6A;
+  --hover-color: #13885b;
+  --google-color: #2d384d;
   --dark10: #1A202C;
   --dark20: #656769;
   --dark30: #E8E8E8;
@@ -17,7 +23,7 @@
 /*********************** Main ******************** */
 .main{
   display: flex;
-  height: 100%;
+  min-height: 100vh;
   }
 
   #logo{
@@ -25,6 +31,7 @@
     align-items: center;
     justify-content: center;
     width: 50%;
+    background: var(--dark30);
   }
 
   #form{
@@ -33,3 +40,133 @@
     justify-content: center;
     width: 50%;
   }
+
+  /*********** Form ******* */
+
+  .form{
+    display: flex;
+    flex-direction: column;
+  }
+
+  #textForm{
+    font-family: 'Archivo';
+    font-weight: 500;
+    font-size: 1.25rem;
+    color: var(--dark10);
+  }
+
+  #titlleForm{
+    font-family: 'Archivo';
+    font-weight: 600;
+    font-size: 2rem;
+    color: var(--dark10);
+    margin-top: 0.75rem;
+  }
+
+  .labelForm{
+    font-family: 'Archivo';
+    font-weight: 400;
+    font-size: 1.125rem;
+    color: var(--dark10);
+    margin-top: 2rem;
+  }
+
+  .inputForm{
+    padding: 1rem;
+    border: 0.0625rem var(--dark30);
+    border-radius: 0.25rem;
+    background: var(--dark40);
+    margin-top: 0.75rem;
+  }
+
+  .inputForm:focus{
+    outline: none;
+  }
+
+  .inputForm::placeholder{
+    font-family: 'Archivo';
+    font-weight: 400;
+    font-size: 1rem;
+    color: var(--dark20);
+  }
+
+  /*** checkbox form ***/
+
+#checkInfor{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 1.5rem;
+}
+
+#textCheck{
+  font-family: 'Archivo';
+  font-weight: 500;
+  font-size: 1rem;
+  color: var(--dark10);
+}
+
+#spanCheck{
+   font-family: 'Archivo';
+  font-weight: 500;
+  font-size: 1rem;
+  color: var(--brand-color);
+}
+
+/* *** BTN Form*** */
+
+#greenBTN{
+  background: var(--brand-color);
+  padding: 1rem 2rem;
+  margin-top: 3.4375rem;
+  border-radius: 0.25rem;
+  border: none;
+  color: var(--dark50);
+  font-family: 'Archivo';
+  font-weight: 600;
+  font-size: 1.125rem;
+  align-items: center;
+  cursor: pointer;
+}
+
+#greenBTN:hover{
+  background: var(--hover-color);
+}
+
+#blackBTN{
+  display: flex;
+  gap: 0.625rem;
+   background: var(--dark10);
+  padding: 1rem 2rem;
+  margin-top: 1.5rem;
+  border-radius: 0.25rem;
+  border: none;
+  color: var(--dark50);
+  font-family: 'Archivo';
+  font-weight: 600;
+  font-size: 1.125rem;
+  align-items: center;
+  cursor: pointer;
+}
+
+#blackBTN:hover{
+  background: var(--google-color);
+}
+
+/* ******* Footer ******** */
+.footer{
+  margin-top: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+ #textFooter{
+  font-family: 'Archivo';
+  font-weight: 500;
+  font-size: 1.25rem;
+ }
+
+ #spanFooter{
+  color: var(--brand-color);
+   
+ }
