@@ -1,0 +1,11 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Andada Pro' 'Archivp' sans-serif;
+}
+:root{
+  --brandColor:#F1A5B1;
+  --color01: #0B0A0A;
+  --color02: #FFFFFF;
+}
