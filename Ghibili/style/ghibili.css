@@ -3,9 +3,117 @@
   margin: 0;
   box-sizing: border-box;
   font-family: 'Andada Pro' 'Archivo' sans-serif;
+  text-decoration: none;
 }
 :root{
   --brandColor:#F1A5B1;
   --color01: #0B0A0A;
   --color02: #FFFFFF;
+}
+body{
+  margin: 0;
+  padding: 0;
+  background-image: url('/Ghibili/img/background.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+ a{
+  color: var(--color01);
+  font-size: 1.125rem;
+  font-weight: 700;
+  font-family: 'Archivo';
+}
+
+#btn-black a{
+  color: var(--color02);
+  font-size: 1.125rem;
+  font-weight: 700;
+  font-family: 'Archivo';
+}
+
+/* ********* NavBar ********* */
+
+header{
+  max-width: 76rem;
+  margin: 0 auto;
+  padding: 48px 0 48px 0;
+}
+
+.navbar{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-ul{
+  display: flex;
+  gap: 1.5rem;
+}
+/* ********** Main ******** */
+.inforContainer{
+  display: flex;
+  max-width: 76rem;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nameGhibili{
+  font-family: sans-serif;
+  font-weight: 700;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  color: var(--color02);
+}
+
+.h1Titlle{
+  font-family: 'Andada Pro';
+  font-weight: 800;
+  font-size: 4rem;
+  line-height: 4.375rem;
+  color: var(--color02);
+  margin-top: 8px;
+}
+
+.textIfor{
+  font-family: 'Archivo';
+  font-weight: 500;
+  font-size: 1.5rem;
+  line-height: 2.25rem;
+  color: var(--color02);
+  margin-top: 2rem;
+}
+
+.btns{
+  display: flex;
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+#btn-pink{
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-radius: 0.25rem;
+  padding: 0.875rem 2rem;
+  background: var(--brandColor);
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#btn-pink:hover{
+background-color: #eb8195;
+}
+
+#btn-black{
+  border: solid 0.125rem var(--brandColor);
+  border-radius: 0.25rem;
+  padding: 0.875rem 2rem;
+  cursor: pointer;
+  background: transparent;
+  transition: 0.3s;
 }
