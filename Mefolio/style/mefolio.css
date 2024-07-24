@@ -1,0 +1,14 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif 'Archivo';
+}
+
+:root{
+  --color01: #97EDAA;
+  --color02:  #FFFFFF;
+  --color03:  #1F1F1F;
+  --color04: #101010 ;
+  --color05:  #0B0B0B;
+}
