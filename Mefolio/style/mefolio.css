@@ -3,6 +3,8 @@
   padding: 0;
   box-sizing: border-box;
   font-family: sans-serif 'Archivo';
+  text-decoration: none;
+  list-style: none;
 }
 
 :root{
@@ -11,4 +13,334 @@
   --color03:  #1F1F1F;
   --color04: #101010 ;
   --color05:  #0B0B0B;
+}
+body{
+  background: var(--color05);
+}
+
+/***** NavBar *****/
+nav{
+  padding: 2rem;
+}
+.containerNav{
+  max-width: 1920px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#navInfor{
+  display: flex;
+  align-items: center;
+  gap: 3.4375rem;
+}
+
+.navInfor{
+  font-family: 'Archivo';
+  font-weight: 500;
+  font-size: 1.125rem;
+  color: var(--color02);
+}
+
+/***** Header *****/
+
+
+.containerHeader{
+   max-width: 1920px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+#P-euSou{
+color: var(--color02);
+font-family: 'Archivo';
+font-size: 1.5rem;
+font-weight: 500;
+}
+
+#h1Header{
+  color: var(--color01);
+  font-family: 'Archivo';
+  font-weight: 400;
+  font-size: 3rem;
+  margin-top: 0.75rem;
+}
+
+#P-developer{
+  font-family: 'Archivo';
+  font-weight: 400;
+  font-size: 1.5rem;
+  color: var(--color02);
+  margin-top: 2rem;
+}
+
+#btnHeader{
+  background: var(--color01);
+  margin-top: 3rem;
+  padding: 0.625rem 2.5rem;
+  border-radius: 0.25rem;
+  border: none;
+
+  color: var(--color05);
+  font-family: 'Archivo';
+  font-weight: 500;
+  font-size: 1.125rem;
+}
+
+/* Article */
+#ContainerArticle{
+  max-width: 120rem;
+  margin: 0 auto;
+}
+#article{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.h1Article{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#h1Article{
+  color: var(--color01);
+  font-family: 'Archivo';
+  font-weight: 400;
+  font-size: 2rem;
+}
+
+.textArticle{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 3rem;
+}
+
+#textArticle{
+  font-family: 'Archivo';
+  font-weight: 400;
+  font-size: 1.375rem;
+  color: var(--color02);
+  text-align: center;
+  line-height: 2.4375rem;
+}
+
+#contactInfor{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+  margin-top: 4rem;
+}
+
+.h5{
+font-family: 'Archivo';
+font-size: 1.25rem;
+font-weight: 500;
+color: var(--color02);
+text-align: center;
+margin-top: 1.5rem;
+}
+
+.P-contact{
+  font-family: 'Archivo';
+font-size: 1.125rem;
+font-weight: 400;
+color: var(--color02);
+text-align: center;
+margin-top: 1rem;
+}
+
+/***** Section1 *****/
+
+.containerSection{
+  margin: 0 auto;
+  max-width: 120rem;
+}
+
+.h1Section1{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#h1Section1{
+  color: var(--color01);
+  font-family: 'Archivo';
+  font-size: 2rem;
+  font-weight: 400;
+  margin-top: 9.375rem;
+}
+
+.projetos{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 33px;
+}
+
+.imageProjeto{
+  margin-top: 3rem;
+  padding: 5.5rem 12.5rem;
+  background: var(--color04);
+  border: 0.0625rem solid var(--color03);
+  border-radius: 0.25rem;
+}
+
+.P-imageProjeto{
+  font-family: 'Archivo';
+  font-weight: 400;
+  font-size: 1.5rem;
+  color: var(--color01);
+}
+
+.h2NomeProjeto{
+font-family: 'Archivo';
+font-weight: 500;
+font-size: 1.5rem;
+color: var(--color02);
+margin-top: 2rem;
+}
+
+.h3Tecnologias{
+  font-family: 'Archivo';
+  font-family: 500;
+  font-size: 1.125rem;
+  color: var(--color01);
+  margin-top: 1.5rem;
+}
+
+.btns{
+  display: flex;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.btnGreen{
+  background: var(--color01);
+  padding: 0.625rem 2.5rem;
+  border: solid;
+  border-radius: 0.25rem;
+  color: var(--color05);
+  font-family: 'Archivo';
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+.btnBlack{
+  background: var(--color05);
+  padding: 0.625rem 2.5rem;
+  border: solid var(--color01);
+  border-radius: 0.25rem;
+  color: var(--color01);
+  font-family: 'Archivo';
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+/***** Section2 *****/
+.containerSection2{
+  margin: 0 auto;
+  max-width: 120rem;
+  }
+
+.h1Section2{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#h1Section2{
+  color: var(--color01);
+  margin-top: 9.375rem;
+  font-family: 'Archivo';
+  font-size: 2rem;
+  font-weight: 400;
+  text-align: center;
+}
+
+#serviços-Section2{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.serviços-Section2{
+  background: var(--color04);
+  border: solid 0.0625rem var(--color03);
+  border-bottom: solid 0.0625rem var(--color01);
+  padding: 2rem 18rem 9.375rem 2.5rem;
+}
+
+.h2Section2{
+  font-family: 'Archivo';
+  font-size: 2rem;
+  font-weight: 400;
+  color: var(--color02);
+  margin-top: 2.375rem;
+}
+
+/* **** Section3 **** */
+
+.containerSection3{
+  margin: 0 auto;
+  max-width: 120rem;
+}
+
+.h1Section3{
+  font-family: 'Archivo';
+  font-size: 2rem;
+  font-weight: 400;
+  text-align: center;
+  margin-top: 9.375rem;
+  color: var(--color01);
+}
+
+#skill{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.Skills{
+  background: var(--color04);
+  border: solid 0.0625rem var(--color03);
+  padding: 2.1875rem 3rem;
+}
+
+/* **** Footer ***** */
+
+.containerFooter{
+  margin: 0 auto;
+  max-width: 120rem;
+}
+
+#footer{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-top: 9.375rem;
+  background: var(--color04);
+  padding: 1rem;
+}
+
+.P-Span{
+color: var(--color02);
+font-family: 'Archivo';
+font-weight: 500;
+font-size: 1.25rem;
+}
+
+#span2{
+  display: flex;
+  gap: 0.75rem;
 }
