@@ -13,6 +13,7 @@
   --color03:  #1F1F1F;
   --color04: #101010 ;
   --color05:  #0B0B0B;
+  --BtnHover: #50d86f;
 }
 body{
   background: var(--color05);
@@ -28,12 +29,15 @@ nav{
   display: flex;
   justify-content: space-around;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 #navInfor{
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 3.4375rem;
+  flex-wrap: wrap;
 }
 
 .navInfor{
@@ -42,6 +46,18 @@ nav{
   font-size: 1.125rem;
   color: var(--color02);
 }
+
+.linkNav{
+  color: var(--color02);
+  cursor: pointer;
+}
+
+.linkNav:hover{
+  color: var(--color01);
+  cursor: pointer;
+  text-decoration: underline;
+}
+
 
 /***** Header *****/
 
@@ -52,6 +68,7 @@ nav{
   display: flex;
   align-items: center;
   justify-content: space-evenly;
+  flex-wrap: wrap;
 }
 
 #P-euSou{
@@ -83,11 +100,15 @@ font-weight: 500;
   padding: 0.625rem 2.5rem;
   border-radius: 0.25rem;
   border: none;
-
+  cursor: pointer;
   color: var(--color05);
   font-family: 'Archivo';
   font-weight: 500;
   font-size: 1.125rem;
+}
+
+#btnHeader:hover{
+  background: #50d86f;
 }
 
 /* Article */
@@ -99,12 +120,14 @@ font-weight: 500;
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 .h1Article{
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 #h1Article{
@@ -119,12 +142,13 @@ font-weight: 500;
   align-items: center;
   justify-content: center;
   margin-top: 3rem;
+  flex-wrap: wrap;
 }
 
 #textArticle{
   font-family: 'Archivo';
   font-weight: 400;
-  font-size: 1.375rem;
+  font-size: 1.25rem;
   color: var(--color02);
   text-align: center;
   line-height: 2.4375rem;
@@ -136,6 +160,7 @@ font-weight: 500;
   align-items: center;
   text-align: center;
   margin-top: 4rem;
+  flex-wrap: wrap;
 }
 
 .h5{
@@ -145,15 +170,22 @@ font-weight: 500;
 color: var(--color02);
 text-align: center;
 margin-top: 1.5rem;
+margin-bottom: 1.5rem;
 }
 
-.P-contact{
-  font-family: 'Archivo';
+.a-contact{
+font-family: 'Archivo';
 font-size: 1.125rem;
 font-weight: 400;
 color: var(--color02);
 text-align: center;
-margin-top: 1rem;
+cursor: pointer;
+}
+
+.a-contact:hover{
+  color: var(--color01);
+  text-decoration: underline;
+  cursor: pointer;
 }
 
 /***** Section1 *****/
@@ -167,6 +199,7 @@ margin-top: 1rem;
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 #h1Section1{
@@ -182,6 +215,7 @@ margin-top: 1rem;
   align-items: center;
   justify-content: center;
   gap: 33px;
+  flex-wrap: wrap;
 }
 
 .imageProjeto{
@@ -190,6 +224,11 @@ margin-top: 1rem;
   background: var(--color04);
   border: 0.0625rem solid var(--color03);
   border-radius: 0.25rem;
+  transition: transform 0.3s;
+}
+
+.imageProjeto:hover{
+transform: scale(1.08);
 }
 
 .P-imageProjeto{
@@ -219,6 +258,7 @@ margin-top: 2rem;
   display: flex;
   gap: 2rem;
   margin-top: 2rem;
+  flex-wrap: wrap;
 }
 
 .btnGreen{
@@ -230,7 +270,16 @@ margin-top: 2rem;
   font-family: 'Archivo';
   font-weight: 500;
   font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s;
 }
+
+.btnGreen:hover{
+  background: var(--BtnHover);
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
 
 .btnBlack{
   background: var(--color05);
@@ -241,6 +290,14 @@ margin-top: 2rem;
   font-family: 'Archivo';
   font-weight: 500;
   font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btnBlack:hover{
+cursor: pointer;
+background: var(--color04);
+transform: scale(1.1);
 }
 
 /***** Section2 *****/
@@ -270,6 +327,7 @@ margin-top: 2rem;
   justify-content: center;
   gap: 2rem;
   margin-top: 3rem;
+  flex-wrap: wrap;
 }
 
 .serviços-Section2{
@@ -309,6 +367,7 @@ margin-top: 2rem;
   justify-content: center;
   gap: 2rem;
   margin-top: 3rem;
+  flex-wrap: wrap;
 }
 
 .Skills{
@@ -331,6 +390,7 @@ margin-top: 2rem;
   margin-top: 9.375rem;
   background: var(--color04);
   padding: 1rem;
+  flex-wrap: wrap;
 }
 
 .P-Span{
@@ -343,4 +403,5 @@ font-size: 1.25rem;
 #span2{
   display: flex;
   gap: 0.75rem;
+  flex-wrap: wrap;
 }
