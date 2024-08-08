@@ -42,6 +42,11 @@ line-height: 7.25rem;
 color: var(--color04);
 }
 
+#title{
+  -webkit-text-stroke-width: 0.25rem;
+  -webkit-text-stroke-color: var(--color01);
+}
+
 .collum1, .collum2, .collum3{
   display: flex;
   align-items: center;
